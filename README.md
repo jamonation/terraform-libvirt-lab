@@ -13,11 +13,3 @@ The remaining work in this repository is to incorporate Ansible playbooks to con
 * terraform >= v0.13
 * libvirt with a default network and storage pool
 * [terraform-provider-libvirt](https://github.com/dmacvicar/terraform-provider-libvirt)
-
-## Todo (make these issues)
-
-* Incorporate Ansible playbooks for each existing resource. Run it either standalone or using `local-exec` with terraform
-* Design a monitoring stack of VMs with modules for prometheus, influxdb, grafana, and alertmanager
-* Provision each ^ monitoring VM using Ansible
-* Document set up with various requirements e.g. terraform 0.13 plugin locations, defining libvirt network & storage
-* Figure out if each module should have its own `cloud_init.cfg` or share a symlink to a top-level version
